@@ -2,3 +2,9 @@ node_modules
 dist
 *.local
 .DS_Store
+
+# TypeScript build artifacts (these must NOT be committed — a stale
+# vite.config.js would override vite.config.ts and break the Pages base path)
+vite.config.js
+vite.config.d.ts
+*.tsbuildinfo
